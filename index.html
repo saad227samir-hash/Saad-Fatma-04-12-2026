@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#fff"><meta name="description" content="دعوة زفاف سعد وفاطمة — الجمعة 4 ديسمبر 2026">
+  <title>سعد ♡ فاطمة | دعوة زفاف</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;500;600;700&family=Lateef:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <audio id="musicIntro" src="assets/music-intro-8s.mp3" preload="auto"></audio>
+  <audio id="song" src="assets/music-main.mp3" preload="auto"></audio>
+  <div class="petals" aria-hidden="true"></div>
+  <main>
+    <section class="page cover active" id="cover" aria-label="الغلاف">
+      <div class="cover-border"><div class="corner top-right">❧</div><div class="corner top-left">❧</div><div class="corner bottom-right">❧</div><div class="corner bottom-left">❧</div>
+        <div class="cover-mark">✧</div>
+        <h1 class="basmala">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</h1>
+        <div class="thin-rule"><span>✦</span></div>
+        <p class="cover-intro">معنا أجمل اللحظات .. فكونوا معنا</p>
+        <button class="gold-button" id="openInvite">افتح دعوتنا <span>♡</span></button>
+      </div>
+    </section>
+
+    <section class="page photo-page" id="invitation" aria-label="دعوة الزفاف">
+      <article class="glass-card invite-card">
+        <p class="eyebrow">بكل الحب والفرح</p>
+        <p class="verse">﴿ وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنْفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً ﴾</p>
+        <div class="ornament">❧ ✧ ❧</div>
+        <p class="invite-copy">يتشرف بدعوتكم</p>
+        <p class="family">عائلة آل سلامة</p><span class="and">و</span><p class="family">عائلة آل هيبة</p>
+        <p class="invite-copy">لحضور حفل زفاف</p>
+        <div class="names"><span>سعد</span><b>♡</b><span>فاطمة</span></div>
+        <p class="small-date">الجمعة · 4 ديسمبر 2026</p>
+        <p class="warm-note">بارك الله لهما وبارك عليهما وجمع بينهما في خير</p>
+        <button class="gold-button" data-next="when">موعد فرحتنا</button>
+      </article>
+    </section>
+
+    <section class="page photo-page" id="when" aria-label="موعد الحفل">
+      <article class="glass-card">
+        <p class="eyebrow">ننتظركم لنفرح معًا</p><h2>موعد ليلة العمر</h2>
+        <div class="date-display"><strong>الجمعة</strong><span>4</span><strong>ديسمبر 2026</strong></div>
+        <div class="time-display">من الساعة <b>5 مساءً</b> إلى <b>11 مساءً</b></div>
+        <div class="countdown" aria-label="الوقت المتبقي"><div><strong id="days">--</strong><small>يوم</small></div><div><strong id="hours">--</strong><small>ساعة</small></div><div><strong id="minutes">--</strong><small>دقيقة</small></div><div><strong id="seconds">--</strong><small>ثانية</small></div></div>
+        <p class="soft-text">وجودكم هو أجمل هدية في يومنا</p>
+        <button class="gold-button" id="calendarButton">أضف الموعد إلى التقويم</button>
+        <button class="text-button" data-next="venue">مكان الاحتفال</button>
+      </article>
+    </section>
+
+    <section class="page photo-page" id="venue" aria-label="مكان الحفل">
+      <article class="glass-card">
+        <p class="eyebrow">نفرح بوجودكم</p><h2>مكان لقائنا</h2>
+        <div class="venue-icon">✧</div><p class="venue-name">فيلا نعمة</p><p class="venue-city">الجيزة</p>
+        <p class="soft-text">يسعدنا وصولكم ومشاركتنا فرحتنا. اضغطوا على الزر لفتح موقع القاعة مباشرةً على الخريطة.</p>
+        <a class="gold-button map-button" href="https://maps.app.goo.gl/yvjLHs9ShSsRBSYM8" target="_blank" rel="noopener noreferrer">الموقع على الخريطة</a>
+        <button class="text-button" data-next="guestbook">دفتر التهاني</button>
+      </article>
+    </section>
+
+    <section class="page photo-page" id="guestbook" aria-label="دفتر التهاني">
+      <article class="glass-card guest-card">
+        <p class="eyebrow">كلمة من القلب</p><h2>دفتر تهاني سعد وفاطمة</h2>
+        <p class="soft-text">يسعدنا نحتفظ بكلمتكم الجميلة. رسائلكم هتكون خاصة ومش هيشوفها غير سعد وفاطمة.</p>
+        <form id="guestForm">
+          <label for="guestName">اسمك</label><input id="guestName" maxlength="60" required placeholder="اكتب اسمك">
+          <label for="guestMessage">رسالتك</label><textarea id="guestMessage" maxlength="500" rows="4" required placeholder="اكتب تهنئتك من القلب..."></textarea>
+          <button class="gold-button" type="submit" disabled>إرسال التهنئة (سيُفعّل بعد ربط التخزين الخاص)</button>
+        </form>
+        <p class="privacy-note">الخصوصية أولًا: لن يتم عرض الرسائل للضيوف. سيتم تفعيل الإرسال بعد ربط خدمة تخزين خاصة وآمنة للزوجين.</p>
+        <button class="text-button" data-next="invitation">العودة لبداية الدعوة</button>
+      </article>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body></html>
